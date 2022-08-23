@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link data-th-href="@{/css/main.css?{id}(id=${timestamp})}" rel="stylesheet">
+    <title>Purushotham Portfolio</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">purushotham.com</div></a>
+</nav>
+
+<main role="main" class="container">
+    <div class="starter-template">
+        <h1 th:text="${title}">Default title.</h1>
+        <p th:text="${msg}">Default text.</p>
+    </div>
+    <div>
+    	<br><br>
+        <h2>Skills Set</h2>
+        <br>
+        <dl>
+		  <dt>Operating systems</dt>
+		  <dd>- Debian,RHEL, Centos, Windows</dd>
+		  <dt>Cloud</dt>
+		  <dd>- Amazon Web Services, Azure, GCP</dd>
+		  <dt>CI/CD Tools</dt>
+		  <dd>- Jenkins, AzureDevops</dd>
+		  <dt>Devops tools</dt>
+		  <dd>- Docker, Kubernetes, Helm, Istio, Linkerd, Terraform</dd>
+		  <dt>Build tools </dt>
+		  <dd>- Maven, Gradel</dd>
+		  <dt>Revision control utility </dt>
+		  <dd>-  Git, Azure Repos, Bitbucket</dd>
+		  <dt>Configuration Management</dt>
+		  <dd>- Puppet, Ansible</dd>
+		  <dt> Database servers </dt>
+		  <dd>- MYSQL, Redis, Mongodb</dd>
+		  <dt>Scripting</dt>
+		  <dd>- APython, Bash</dd>
+		   <dt>Monitoring Tools</dt>
+		  <dd>- Grafana, Prometheus, Sensu, Nagios</dd>
+		   <dt>Log analytics</dt>
+		  <dd>-  ELK Stack, Loki</dd>
+		   <dt>Ticketing tools</dt>
+		  <dd>- Jira, ServiceNow</dd>
+		</dl>
+    	
+    </div>
+</main>
+
+<script data-th-src="@{/js/main.js}"></script>
+</body>
+
+</html>

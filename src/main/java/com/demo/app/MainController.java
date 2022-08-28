@@ -9,8 +9,8 @@ public class MainController {
 	
 	@GetMapping("/")
     public String index(final Model model) {
-		model.addAttribute("title", "Komera Purushotham - Devops Engineer");
-		model.addAttribute("msg", "Over 3+ years of experience with DevOps and System Engineering in Multi Cloud environments such as AWS, GCP, AZURE for managing servers hosted on them.");
+		model.addAttribute("title", "Nagiri Supriya - Devops Engineer");
+		model.addAttribute("msg", "Over 2+ years of experience with DevOps and System Engineering in Multi Cloud environments such as AWS, GCP, AZURE for managing servers hosted on them.");
 		return "index";
   }
 
